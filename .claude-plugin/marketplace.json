@@ -1,0 +1,11 @@
+{
+  "name": "ethos6",
+  "owner": { "name": "Ethos 6", "url": "https://github.com/Ethos6" },
+  "plugins": [
+    {
+      "name": "superpowers",
+      "source": "./",
+      "description": "Evidence-backed development workflow for coding agents: compact skills plus the sp ledger, which enforces test-first evidence, risk-based review and resumable progress."
+    }
+  ]
+}

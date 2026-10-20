@@ -1,0 +1,10 @@
+{
+  "name": "superpowers",
+  "version": "1.0.0",
+  "description": "Evidence-backed development workflow for coding agents: compact skills plus the sp ledger, which enforces test-first evidence, risk-based review and resumable progress.",
+  "author": { "name": "Ethos 6", "url": "https://github.com/Ethos6" },
+  "homepage": "https://github.com/Ethos6/superpowers",
+  "repository": "https://github.com/Ethos6/superpowers",
+  "license": "MIT",
+  "keywords": ["skills", "workflow", "tdd", "planning", "code-review", "verification"]
+}
