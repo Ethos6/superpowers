@@ -1,0 +1,14 @@
+{
+  "name": "superpowers",
+  "version": "1.0.0",
+  "description": "A disciplined, evidence-backed development workflow for AI coding agents: compact skills plus a zero-dependency state engine that enforces the steps agents tend to skip.",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/run.cjs",
+    "mutation": "node test/mutation.cjs"
+  }
+}
