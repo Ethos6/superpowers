@@ -1,5 +1,7 @@
 # superpowers
 
+![Superpowers logo](assets/superpowers-mark.svg)
+
 A disciplined development workflow for AI coding agents, where the important steps are **checked by code, not just requested in prose**.
 
 Agents that are told to "write the test first", "get a review" or "verify before claiming success" often skip those steps, especially late in a long session or after the conversation is compacted. superpowers gives the agent a small set of skills describing a good way to work, plus `sp`, a zero-dependency command that keeps a ledger of the work and refuses to close a task until its evidence exists.
@@ -19,6 +21,22 @@ sp: Task 2 cannot be marked done yet:
  request ──► size it ──► trivial:  just do it, verify
                     ├──► small:    sp quick → test-first → sp done → sp finish
                     └──► feature:  shaping → planning → building → shipping
+```
+
+
+```mermaid
+flowchart TD
+    A[Request arrives] --> B{Work size}
+    B -->|Trivial| C[Do the work and verify]
+    B -->|Small| D[Test first and implement]
+    B -->|Feature| E[Shape requirements]
+    E --> F[Plan verified tasks]
+    D --> G[Review and verify]
+    F --> H[Build one task at a time]
+    H --> G
+    C --> I[Report evidence]
+    G --> I
+    I --> J[Choose how to integrate]
 ```
 
 1. **shaping**: the agent asks focused questions and writes a short spec with numbered requirements (`R1`, `R2`) and an acceptance check for each (`A1 (R1): ...`). You approve it.
